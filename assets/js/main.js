@@ -1206,5 +1206,17 @@ var res = [
 });*/
 
 for(var i= 0; i < 10;i++){
-  document.write("<ul>" + res[i].title + "</ul> </br>");
+  document.write("<ul><li>" + res[i].title + "</ul></li>" );
 }
+
+function mostrarInfo(){
+	var tarea = document.getElementById("nuevaTarea").value
+	var contenedorDeInfo = document.getElementById("tarea");
+	contenedorDeInfo.innerHTML = tarea;
+}
+
+
+
+
+
+

@@ -2,13 +2,21 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Lista de tareas</title>
 </head>
-<body>
-	<div class="col m12 botoncillo">
-		<button onclick="botonInfo()">Añadir tarea</button>
-		<input type= "text" name= "tareita">
+<body style="background-color:#F6CECE;">
+	<h1><strong><font color="#B40404">Lista de tarea</font><strong></h1>
+	<p><font color=#151515>Añadir tarea:</p>
+	
+	<div class="botoncillo">
+		<input type= "text" id= "nuevaTarea" name= "tareita" autofocus="">
+		<button type= "submit" onclick="mostrarInfo(); return false">Añadir tarea</button>
 	</div>
+
+	<div>
+		<img src="assets/imagen/checklistpapa.png" width="200" height="200">
+	</div>
+	<div id="tarea" style="margin-top: 25px"></div>
 	<script src="assets/js/main.js"></script>
 </body>
 </html>
